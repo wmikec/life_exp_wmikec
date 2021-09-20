@@ -29,6 +29,7 @@ gapminder_unfiltered%>%
 
 
 
+
 view(sumdat)
 ```
 
