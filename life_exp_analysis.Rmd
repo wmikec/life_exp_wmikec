@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(gapminder)
 data(gapminder_unfiltered)
+
 ```
 
 ## In this file I examine the analysis of Oeppen and Vaupel (2002)
