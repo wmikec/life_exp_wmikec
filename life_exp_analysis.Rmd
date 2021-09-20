@@ -27,6 +27,8 @@ gapminder_unfiltered%>%
   arrange(year)->
   sumdat
 
+
+
 view(sumdat)
 ```
 
