@@ -1,0 +1,33 @@
+---
+title: "life_exp_analysis"
+author: "Michael Carter"
+date: "9/17/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gapminder)
+data(gapminder_unfiltered)
+```
+
+## In this file I examine the analysis of Oeppen and Vaupel (2002)
+
+
+# saving new file    
+```{r}
+
+
+gapminder_unfiltered%>%
+  group_by(year)%>%
+  filter(lifeExp==max(lifeExp))%>%
+  ungroup()%>%
+  select(year, country, lifeExp)%>%
+  arrange(year)->
+  sumdat
+
+view(sumdat)
+```
+
+
